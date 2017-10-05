@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ChannelView : UIView
+//重新计算tag
+-(void)resetBtnTag;
+
 //上边数组
 @property (nonatomic,strong) NSArray *upBtnDataArr;
 //下边数组

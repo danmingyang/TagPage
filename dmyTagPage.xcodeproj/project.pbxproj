@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2396EEB1F867CA70040E2A7 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = E2396EEA1F867CA70040E2A7 /* close.png */; };
 		E2C582E81F852149006C5FA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C582E71F852149006C5FA8 /* AppDelegate.m */; };
 		E2C582EB1F852149006C5FA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C582EA1F852149006C5FA8 /* ViewController.m */; };
 		E2C582F31F852149006C5FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C582F11F852149006C5FA8 /* LaunchScreen.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2396EE91F866A150040E2A7 /* page-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "page-Prefix.pch"; sourceTree = "<group>"; };
+		E2396EEA1F867CA70040E2A7 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		E2C582E31F852149006C5FA8 /* dmyTagPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dmyTagPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C582E61F852149006C5FA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2C582E71F852149006C5FA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		E2C582E51F852149006C5FA8 /* dmyTagPage */ = {
 			isa = PBXGroup;
 			children = (
+				E2396EEA1F867CA70040E2A7 /* close.png */,
 				E2C582E61F852149006C5FA8 /* AppDelegate.h */,
 				E2C582E71F852149006C5FA8 /* AppDelegate.m */,
 				E2C582E91F852149006C5FA8 /* ViewController.h */,
@@ -71,6 +75,7 @@
 				E2C582FD1F8523D9006C5FA8 /* ChannelView.m */,
 				E2C582FF1F852547006C5FA8 /* ChannelBtn.h */,
 				E2C583021F85271E006C5FA8 /* ChannelBtn.m */,
+				E2396EE91F866A150040E2A7 /* page-Prefix.pch */,
 			);
 			path = dmyTagPage;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2396EEB1F867CA70040E2A7 /* close.png in Resources */,
 				E2C582F31F852149006C5FA8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +281,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3V25TLD56;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/dmyTagPage/page-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = dmyTagPage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dog.learn;
@@ -288,6 +297,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3V25TLD56;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/dmyTagPage/page-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = dmyTagPage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dog.learn;

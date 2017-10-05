@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ChannelBtn : UIButton
-- (void)buttonWithData:(NSString *)title group:(NSString*) group;
+- (void)buttonWithData:(NSString *)title group:(NSString*) group tag:(int)tag;
+-(void)setCloseVisible:(BOOL)visible;
+-(void)resetTarget:(NSString*) group;
+
 @end
