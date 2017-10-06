@@ -171,7 +171,7 @@ static CGFloat btnH;
     static  CGRect viewFrame;
 
     NSString *btn_tag = [[sender userInfo] objectForKey:@"btn_tag"];
-    ChannelBtn *view = [self.upBtnArr objectAtIndex:[btn_tag intValue]-1];
+    ChannelBtn *view = [self.upBtnArr objectAtIndex:[btn_tag intValue]];
 
     NSInteger btn_state = [[[sender userInfo] objectForKey:@"btn_state"] integerValue];
     NSValue *btn_location = [[sender userInfo] objectForKey:@"btn_location"];
@@ -197,8 +197,10 @@ static CGFloat btnH;
                 [self.upBtnArr insertObject:view atIndex:i];
                 [UIView animateWithDuration:0.3 animations:^{
                     [self.upBtnArr enumerateObjectsUsingBlock:^(ChannelBtn *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                        NSLog(@"index--------%ld",idx);
                         if(obj != view){
                             obj.frame = [self.upFranmeArr[idx] CGRectValue];
+                            [self resetBtnTag];
                         }else{
                             viewFrame = [self.upFranmeArr[idx] CGRectValue];
                         }
@@ -212,7 +214,9 @@ static CGFloat btnH;
     if(btn_state == UIGestureRecognizerStateEnded){
         view.transform = CGAffineTransformIdentity;
         [UIView animateWithDuration:0.3 animations:^{
-//            view.frame = viewFrame;
+            view.frame = viewFrame;
+            [self resetBtnTag];
+
         }];
     }
 }
